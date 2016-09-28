@@ -259,15 +259,21 @@ console.log(score);
 // twoPlusTwo gets set to `undefined`. Refactor
 // the function to make it work.
 
-// var addNumbers = function(numberA, numberB) {
-//   console.log(numberA + numberB);
-// };
-//
-// var twoPlusTwo = addNumbers(2,2);
+var addNumbers = function(numberA, numberB) {
+  console.log(numberA + numberB);
+  
+};
+
+var twoPlusTwo = addNumbers(2,2);
+
+
 
 // Put your answer below -------------------------
-
-
+function addNumbers(numberA, numberB){
+  console.log(numberA + numberB)
+  return addNumbers;
+}
+var twoPlusTwo = addNumbers(2,2);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
