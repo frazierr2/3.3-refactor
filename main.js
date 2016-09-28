@@ -47,7 +47,7 @@ function sayHi() {
   alert("Hello, World!");
 }
 
-// setTimeout(sayHi, 2000);
+setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 var sayHi = function(){
