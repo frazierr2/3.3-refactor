@@ -206,9 +206,9 @@ function callNtimes(funcToCall, numOfTimes) {
   }
 }
 var testing = function(){
-  console.log('Hello');
+  console.log('What What');
 }
-callNtimes(testing,10);
+callNtimes(testing,30);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -224,19 +224,30 @@ callNtimes(testing,10);
 
 // HINT: "global scope"
 
-// var score = 0;
-//
-// var increaseScore = function() {
-//   score++;
-// };
-//
-// var decreaseScore = function() {
-//   score--;
-// };
+var score = 0;
+
+var increaseScore = function() {
+  score++;
+};
+
+var decreaseScore = function() {
+  score--;
+};
 
 // Put your answer below -------------------------
+(function(){
+  var score = 0;
 
+  function increaseScore(){
+    score++;
+  }
 
+  function decreaseScore(){
+    score--;
+  }
+
+}());
+console.log(score);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
