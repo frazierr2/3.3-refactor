@@ -53,7 +53,7 @@ function sayHi() {
 var sayHi = function(){
   alert("Hello, World!");
 }
-setTimeout(sayHi, 2000);
+// setTimeout(sayHi, 2000);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -96,16 +96,21 @@ console.log("The letter is", letter);
 // of the function is 5 lines of code. Refactor
 // this function to do the same thing with 1 line
 
-// var reverseStr = function(str) {
-//   var arr;
-//   arr = str.split("");
-//   arr = arr.reverse();
-//   str = arr.join("");
-//   return str;
-// };
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+
+};
 
 // Put your answer below -------------------------
+function reverseStr(str){return str.split("").reverse().join("");}
 
+var test = "hello";
+var test2 = reverseStr(test);
+console.log(test2);
 
 // -----------------------------------------------
 
@@ -120,27 +125,41 @@ console.log("The letter is", letter);
 // Refactor this function to use an object
 // instead of an if/else statement.
 
-// var spanishColor = function(colorName) {
-//   if (colorName.toLowerCase() === "rojo") {
-//     return "#ff0000";
-//   }
-//   else if (colorName.toLowerCase() === "blanco") {
-//     return "#ffffff";
-//   }
-//   else if (colorName.toLowerCase() === "azul") {
-//     return "#0000ff";
-//   }
-//   else if (colorName.toLowerCase() === "verde") {
-//     return "#00ff00";
-//   }
-//   else if (colorName.toLowerCase() === "negro") {
-//     return "#000000";
-//   }
-// };
+var spanishColor = function(colorName) {
+  if (colorName.toLowerCase() === "rojo") {
+    return "#ff0000";
+  }
+  else if (colorName.toLowerCase() === "blanco") {
+    return "#ffffff";
+  }
+  else if (colorName.toLowerCase() === "azul") {
+    return "#0000ff";
+  }
+  else if (colorName.toLowerCase() === "verde") {
+    return "#00ff00";
+  }
+  else if (colorName.toLowerCase() === "negro") {
+    return "#000000";
+  }
+};
+
 
 // Put your answer below -------------------------
-
-
+function spanishColor(colorName){
+  var color = {
+    'rojo': '#ff0000',
+    'blanco':'#ffffff',
+    'azul':'#0000ff',
+    'verde':'#00ff00',
+    'negro':'#000000'
+  };
+  return color[colorName];
+}
+console.log(spanishColor("rojo"));
+console.log(spanishColor("blanco"));
+console.log(spanishColor("azul"));
+console.log(spanishColor("verde"));
+console.log(spanishColor("negro"));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -153,9 +172,11 @@ console.log("The letter is", letter);
 // Break it up so that the declaration and
 // assignment are happening on 2 seperate lines.
 
-// var foo = "bar";
+var foo = "bar";
 
 // Put your answer below -------------------------
+var foo;
+foo = "bar";
 
 
 // -----------------------------------------------
