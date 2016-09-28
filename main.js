@@ -193,14 +193,22 @@ foo = "bar";
 // to specify a number of times to call the given
 // function.
 
-// var callTenTimes = function(callback) {
-//   var range = _.range(10);
-//   _.each(range, callback);
-// };
+var callTenTimes = function(callback) {
+  for(var i = 0; i < 10; i++){
+    callback();
+  }
+};
 
 // Put your answer below -------------------------
-
-
+function callNtimes(funcToCall, numOfTimes) {
+  for(var i = 0; i < numOfTimes; i++){
+    funcToCall();
+  }
+}
+var testing = function(){
+  console.log('Hello');
+}
+callNtimes(testing,10);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
