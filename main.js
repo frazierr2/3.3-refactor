@@ -68,21 +68,22 @@ setTimeout(sayHi, 2000);
 // [b]: y then z
 // [c]: z then y
 // [d]: x then z
-
+//
 // Please explain your answer.
 
-// var letter = "x";
-//
-// setTimeout(function(){
-//   letter = "y";
-//   console.log("The letter is", letter);
-// }, 1);
-//
-// letter = "z";
-// console.log("The letter is", letter);
+var letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+// The answer is going to be [c]. The reason is because the in the code block that we have you start off with declaring var letter =x, but you do not console.log that anywhere so the code passes that one. Then it continues to look down the code and next you get to the function that runs letter=y and notices that is on an interval and runs it. Next it goes to letter=z and runs that. The reason Z is displayed first in the console over Y is because it doesn't have a setInterval on it. So when the command it shoots back instantly where as the Y has a delay of 1 second, but because of that delay it takes longer to run that command than letter = Z.
 
 // -----------------------------------------------
 
