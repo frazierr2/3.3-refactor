@@ -298,6 +298,9 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+
+//The reason that it was setting speed NaN is because amount wasn't defined. It was adding a speed of 0 plus undefined and that is why it was getting undefined in the speed section.
+
 (function(){
 var speed = 0;
 
