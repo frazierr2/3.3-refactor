@@ -261,7 +261,7 @@ console.log(score);
 
 var addNumbers = function(numberA, numberB) {
   console.log(numberA + numberB);
-  
+
 };
 
 var twoPlusTwo = addNumbers(2,2);
@@ -291,15 +291,30 @@ var twoPlusTwo = addNumbers(2,2);
 // Then refactor the function to have a default
 // amount of 1 if no param is given.
 
-// var speed = 0;
-//
-// var accelerate = function(amount) {
-//   speed += amount;
-// };
+var speed = 0;
+
+var accelerate = function(amount) {
+  speed += amount;
+};
 
 // Put your answer below -------------------------
+(function(){
+var speed = 0;
 
+function accelerate(amount){
+  if(amount){
+    speed += amount;
+  }
+  else{
+    speed += 1
+  }
+  return speed;
+}
 
+var total = accelerate();
+console.log(total);
+
+}());
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
